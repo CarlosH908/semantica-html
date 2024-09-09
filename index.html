@@ -3,9 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Universidad de Cordoba</title>
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .cabeza{
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            border-radius: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .navegation{
+            justify-content: left;
+            display: flex;
+            
+        }
+        .icon{
+        
+            float: left; /* Posiciona la imagen a la izquierda */
+            margin-right: 15px;
+            
+        }
+        .cabezon{
+            color: rgb(75, 114, 35);
+            font-family: "Roboto", sans-serif;
+            font-weight: 30;
+            font-style: normal;
+            margin-top: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+          
+        }
+        hr{
+            margin: 0; /* Elimina los márgenes predeterminados del <hr> */
+            padding: 0;
+            height: 2px; 
+            width: auto;
+            background-color: rgb(34, 113, 27); 
+        }
+        ul {
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+        }
+        li{
+            margin-right: 30px;
+            transition: background-color 0.6s, color 0.6s;
+            font-family: "Nerko One", cursive;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #2eb014; /* Color de fondo cuando se pasa el cursor */
+            color: #fff; /* Color del texto cuando se pasa el cursor */
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%; /* O el ancho deseado */
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Ocultar todas las imágenes por defecto */
+        .slides {
+            display: none;
+        }
+
+        /* Estilo de las imágenes */
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Flechas anteriores y siguientes */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Posicionar la flecha a la izquierda */
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Posicionar la flecha a la derecha */
+        .next {
+            right: 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Indicadores debajo de las imágenes */
+        .dots {
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            top: -20px;
+        }
+
+        .dots span {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dots span:hover {
+            background-color: #717171;
+        }
+        .hola{
+            font-size: 10px;
+        }
+        .pie{
+            align-items: center;
+        }
+        .roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+            align-items: center;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */ /* Centra verticalmente */ /* Ajusta el contenedor al alto de la ventana */
+        }
+        nav ul li a {
+            text-decoration: none;      /* Elimina el subrayado de los enlaces */
+            color: black;               /* Color del texto */
+        }
+        footer{
+            display: flex;
+            color: rgb(255, 255, 255);
+            background-color: #146f00;
+            height: 60px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+        .shadow{
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
+    <header class="shadow">
+        <hr>
+        <nav class="cabezon hola roboto-bold">
+            <ul>
+        <li><a href="https://www.unicordoba.edu.co/index.php/aspirantes/">ASPIRANTES</a></li>
+        <li> <a href="https://www.unicordoba.edu.co/index.php/estudiantes/">ESTUDIANTES</a></li>
+        <li><a href="https://www.unicordoba.edu.co/index.php/egresados/">EGRESADOS</a></li>
+        <li><a href="https://www.unicordoba.edu.co/index.php/docentes/">DOCENTES</a></li>
+        <li><a href="https://www.unicordoba.edu.co/index.php/administrativos/">ADMINISTRATIVOS</a></li>
+        <li><a href="https://www.unicordoba.edu.co/index.php/bienestar-universitario">BIENESTAR</a></li>
+        <li><a href="http://campusvirtual.unicordoba.edu.co/">CAMPUS VIRTUAL</a></li>
+        <li><a href="https://www.unicordoba.edu.co/index.php/academusoft/">ACADEMUSOFT</a></li>
+        <li><a href="https://www.unicordoba.edu.co/index.php/cursos-de-idiomas/centro-de-idiomas/">CENTRO DE IDIOMAS</a></li>
+        <li><a href="http://biblioteca.unicordoba.edu.co/">BIBLIOTECA</a></li>
+        <li><a href="https://www.unicordoba.edu.co/index.php/informacion-financiera/tesoreria/">PAGOS EN LINEA</a></li> 
+        <li><a href="http://www.gov.co/">GOV.CO</a></li>
+          </ul>
+        </nav>
+    </header>
+    <header class="cabeza roboto-bold">
+        <nav class="navegation">
+            <ul>
+                <li>INSTITUCIONAL</li>
+                <LI>ACADEMIA</LI>
+                <LI>INVESTIGACIÓN</LI>
+                <LI>EXTENSIÓN</LI>
+                <LI>ADMISIONES</LI>
+                <LI>INTERNACIONALIZACIÓN</LI>
+            </ul>
+        </nav>
+      <a href="index.html">
+        <img class="icon" src="https://www.unicordoba.edu.co/wp-content/uploads/2018/11/unicordoba_logo1.png" alt="logo de la pagina">
+      </a>
+    </header>
+    <div class="slideshow-container">
+
+        <!-- Diapositiva 1 -->
+        <div class="slides">
+            <img src="/images/universidad 1.jpg" alt="Imagen 1">
+        </div>
     
+        <!-- Diapositiva 2 -->
+        <div class="slides">
+            <img src="/images/universidad 2.jpg" alt="Imagen 2">
+        </div>
+    
+        <!-- Diapositiva 3 -->
+        <div class="slides">
+            <img src="/images/universidad 3.jpg" alt="Imagen 3">
+        </div>
+    
+        <!-- Botones de navegación -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    
+    <!-- Indicadores -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <!-- Script para el funcionamiento -->
+    <script>
+        let slideIndex = 0;
+        showSlides(); // Iniciar el slideshow
+    
+        // Función para mostrar las diapositivas y controlar el cambio automático
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+    
+            // Ocultar todas las imágenes
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+    
+            // Incrementar el índice de la diapositiva
+            slideIndex++;
+    
+            // Si el índice es mayor que la cantidad de diapositivas, reiniciarlo
+            if (slideIndex > slides.length) {slideIndex = 1}    
+    
+            // Quitar la clase "active" de todos los puntos
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+    
+            // Mostrar la diapositiva actual y activar el punto correspondiente
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+    
+            // Cambiar de imagen cada 5 segundos
+            setTimeout(showSlides, 5000); 
+        }
+    
+        // Función para cambiar manualmente de diapositiva con las flechas
+        function changeSlide(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    
+        // Función para ir a una diapositiva específica usando los puntos
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides();
+        }
+    </script>
+    <div class="container">
+        <img src="/images/todo.png" alt="holap">
+    </div>
+    
+    <hr>
+    <footer>
+            Carrera 6 No. 77- 305 Montería - Córdoba, Colombia  |  Código Postal: 230002  PBX: 57-6047862396 | | Nit: 891080031-3  |   contacto@correo.unicordoba.edu.co
+            La Universidad de Córdoba, es una Institución de educación superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.
+            Mapa de sitio, Ley de protección de datos, Política de privacidad, Transparencia y acceso a la información , PQRSyD contacto@correo.unicordoba.edu.co - notificacionesjudiciales@correo.unicordoba.edu.co.
+    </footer>
 </body>
 </html>
