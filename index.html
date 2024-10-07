@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola mundo</h1>
+    <label>Digite una edad</label>
+    <input id="edad" type="number">
+    <button onclick="calculoedad()">Resultado</button>
+    <p id="resultado"></p>
+</body>
+<script>
+    let edad = 0
+    let mensaje = " "
+    function calculoedad() {
+        edad = document.getElementById("edad").value
+    if (edad > 18)
+{
+    mensaje = "la persona es mayor de edad"
+}
+    else
+    {
+        mensaje = "la persona es menor de edad"
+    }
+    
+    document.getElementById("resultado").innerText = mensaje
+    
+}
+
+</script>
+</html>
